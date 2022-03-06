@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("body").css("filter","0px");
+    $(".result").hide();
     $(".domain-input").focus();
     var input = $(".domain-input");
     $("#checkbtn").prop("disabled",true);
@@ -14,6 +14,7 @@ $(document).ready(function () {
 
     $("#searchForm").on("submit",function(e){
         e.preventDefault();
+        $(".result").hide('100');
         $("#checkbtn").prop("disabled",true).css('cursor','progress');
         if(input.val() == ""){
             $(input).addClass("animated shake error");
@@ -35,6 +36,8 @@ $(document).ready(function () {
                         $(".result").html("<p><strong class='green'>"+response.DomainInfo.domainName+"</strong> is available! <a href="+url+" target='_blank'>Buy Now</p>");
                     }
                     $("#checkbtn").html('<i class="fa fa-search"></i>');
+                    $(".result").show('100');
+            
                 }
             });
         }
