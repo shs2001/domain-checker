@@ -21,10 +21,7 @@ body{
   align-items: center;
   padding: 20px;
 }
-.wrapper .bg-area .domain-image{
-  height: auto;
-  margin-right: 25px;
-}
+
 .wrapper .bg-area .text{
   color: #ffffff;
 }
@@ -36,17 +33,14 @@ body{
 }
 
 .wrapper .main-body{
-  width: 70%;
   margin: 0 auto;
   margin-top: 20px;
   box-shadow: 0 0 20px #b6b6b6;
   padding: 15px;
 }
 .wrapper .main-body form{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
+  margin: 0 auto;
   margin-bottom: 10px;
 }
 .wrapper .main-body form input{
@@ -93,7 +87,6 @@ body{
   cursor: not-allowed;
 }
 .wrapper .main-body .result{
-  width: 95%;
   margin: 0 auto;
   transition: 0.5s ease;
   font-family: 'Roboto', sans-serif;

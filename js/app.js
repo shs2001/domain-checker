@@ -34,7 +34,7 @@ $(document).ready(function () {
                         var url = "https://www.domain.com/registration/?flow=domainDFE&search="+response.DomainInfo.domainName;
                         $(".result").html("<p><strong class='green'>"+response.DomainInfo.domainName+"</strong> is available! <a href="+url+" target='_blank'>Buy Now</p>");
                     }
-                    $("#checkbtn").html('<i class="fa fa-search"></i> Search');
+                    $("#checkbtn").html('<i class="fa fa-search"></i>');
                 }
             });
         }
